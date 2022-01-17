@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script defer src="./index.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Busca repositorios de cualquier usuario de github">
+  <title>Busco Repo</title>
+</head>
+<body>
+  <main>
+    <div class="container-title">
+      <a href="https://github.com/" target="_blank">
+        <i class="fab fa-github-square icon-github"></i>
+      </a>
+      <h1>Busco Repo</h1>
+    </div>
+    <form class="form">
+      <input type="text" name="repo" id="repo" placeholder="Busca un repositorio..." autocomplete="off">
+      <button type="submit">Buscar</button>
+    </form>
+    <section id="root" class="container-repos">
+    </section>
+    <footer></footer>
+  </main>
+  <section class="loader">
+    <h2>Hecho por <strong>Camilo Mora</strong></h2>
+    <section>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+  </section>
+</body>
+</html>
