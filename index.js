@@ -1,7 +1,5 @@
 const btn = document.querySelector('#button')
 const root = document.querySelector('.container-repos')
-// const containerUser = document.querySelector('.user')
-// const containerRepos = document.querySelector('.container-user-repos')
 
 const createUser = (src, name, urlUser) => {
   const img = document.createElement('img')
@@ -87,11 +85,12 @@ const createElementsDOM = (data, userContainer, reposContainer) => {
 }
 
 const getReposUser = async () => {
-  const queryRepo = document.getElementById('query-repo').value
+  const queryRepo = document.getElementById('query-repo')
   const response = await fetch(
-    `https://api.github.com/users/${queryRepo}/repos`
+    `https://api.github.com/users/${queryRepo.value}/repos`
   )
   const data = await response.json()
+
   const a = document.querySelector('.user')
   const b = document.querySelector('.container-user-repos')
 

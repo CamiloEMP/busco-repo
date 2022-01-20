@@ -234,8 +234,7 @@ h1 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  animation: loader 0s linear forwards;
-  /* * 3s*/
+  animation: loader 3s linear forwards;
 }
 
 .loader h2 {
@@ -251,11 +250,10 @@ h1 {
 .loader section>div {
   width: 50px;
   height: 50px;
-  background-color: var(--black);
+  background-color: var(--primary);
   border-radius: 50%;
   transform: scale(0);
-  animation: loading 0s ease-in-out infinite;
-  /* * 2s*/
+  animation: loading 2s ease-in-out infinite;
 }
 
 .loader section div:nth-child(1) {
