@@ -111,3 +111,7 @@ const getReposUser = async () => {
 }
 
 btn.addEventListener('click', getReposUser)
+
+document.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') getReposUser()
+})
